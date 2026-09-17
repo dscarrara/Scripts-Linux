@@ -30,7 +30,7 @@ flatpak install com.spotify.Client com.valvesoftware.Steam org.gnome.Boxes org.v
 # Baixando Chrome e insync
 
 wget -P /home/daniel/Downloads https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb &&
-wget -P /home/daniel/Downloads https://cdn.insynchq.com/builds/linux/insync_3.9.11.60043-noble_amd64.deb
+wget -P /home/daniel/Downloads https://cdn.insynchq.com/builds/linux/3.9.11.60043/insync_3.9.11.60043-noble_amd64.deb &&
 
 # Instalando curl para chave Microsoft
 sudo apt install curl -y &&
@@ -51,8 +51,9 @@ sudo apt install code gparted -y &&
 cd /
 cd /home/daniel/Downloads
 
-sudo dpkg -i google-chrome-stable_current_amd64.deb insync_3.9.6.60027-bookworm_amd64.deb &&
+sudo dpkg -i google-chrome-stable_current_amd64.deb insync_3.9.11.60043-noble_amd64.deb &&
 sudo apt --fix-broken install &&
+sudo apt autoremove &&
 
 # Reiniciando o Sistema
 
