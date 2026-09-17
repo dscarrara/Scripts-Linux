@@ -7,8 +7,8 @@ sudo apt upgrade -y &&
 
 # Instalando Flatpak
 
-sudo apt install flatpak -y &&
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo &&
+# sudo apt install flatpak -y &&
+# flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo &&
 
 # Instalando Programas Flatpak
 
@@ -30,7 +30,7 @@ flatpak install com.spotify.Client com.valvesoftware.Steam org.gnome.Boxes org.v
 # Baixando Chrome e insync
 
 wget -P /home/daniel/Downloads https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb &&
-wget -P /home/daniel/Downloads https://cdn.insynchq.com/builds/linux/3.9.6.60027/insync_3.9.6.60027-bookworm_amd64.deb
+wget -P /home/daniel/Downloads https://cdn.insynchq.com/builds/linux/insync_3.9.11.60043-noble_amd64.deb
 
 # Instalando curl para chave Microsoft
 sudo apt install curl -y &&
