@@ -40,7 +40,7 @@ cd /tmp && curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmo
 
 echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list &&
 
-sudo apt update &&
+sudo apt update -y &&
 
 # instalando programas via apt
 
@@ -53,7 +53,7 @@ cd /home/daniel/Downloads
 
 sudo dpkg -i google-chrome-stable_current_amd64.deb insync_3.9.11.60043-noble_amd64.deb &&
 sudo apt --fix-broken install &&
-sudo apt autoremove &&
+sudo apt autoremove -y &&
 
 # Reiniciando o Sistema
 
