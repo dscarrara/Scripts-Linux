@@ -51,7 +51,7 @@ sudo apt install code gparted -y &&
 cd /
 cd /home/daniel/Downloads
 
-sudo dpkg -i google-chrome-stable_current_amd64.deb insync_3.9.11.60043-jammy_amd64.debnnnnnnnnnnnnnnnnnnnnnn &&
+sudo dpkg -i google-chrome-stable_current_amd64.deb insync_3.9.11.60043-jammy_amd64.deb &&
 sudo apt --fix-broken install &&
 sudo apt autoremove -y &&
 
